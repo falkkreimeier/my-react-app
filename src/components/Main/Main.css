@@ -1,0 +1,33 @@
+.Main__styling {
+  position: relative;
+  width: 320px;
+  margin: 10px auto;
+  border: 1px black solid;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas:
+    "profile name"
+    "profile house";
+}
+
+.Main__profile {
+  position: sticky;
+  padding: 20px;
+  background-color: white;
+  grid-area: profile;
+  height: 8rem;
+}
+
+.Main__name {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  grid-area: name;
+}
+
+.Main__house {
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+  grid-area: house;
+}

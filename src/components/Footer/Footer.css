@@ -1,0 +1,7 @@
+.Footer__styling {
+  width: 300px;
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px auto;
+}
