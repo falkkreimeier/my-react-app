@@ -15,6 +15,11 @@ function App() {
           imgURL={character.image}
           ancestry={character.ancestry}
           key={character.name}
+          eyeColour={character.eyeColour}
+          patronus={character.patronus}
+          actor={character.actor}
+          dateOfBirth={character.dateOfBirth}
+          wandspecs={character.wand}
         />
       ))}
       <Footer />

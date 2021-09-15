@@ -11,14 +11,16 @@
   border: 3px black solid;
   border-radius: 10px;
   display: grid;
+  grid-template-columns: 0.2fr 0.7fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "profile name"
-    "profile house";
+    "profile details";
 }
 
 .Main__profile {
   padding: 0px;
-  margin: 10px 20px 10px 50px;
+  margin: 35px 20px 0px 50px;
   grid-area: profile;
   height: 9rem;
   border-radius: 50%;
@@ -34,13 +36,12 @@
   margin: 10px;
 }
 
-.Main__house {
+.main__details {
+  color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  grid-area: house;
+  grid-area: details;
   padding: 0;
-  margin: 0;
+  margin: 10px;
 }
 
 .red {
@@ -61,16 +62,32 @@
 
 .Main__button {
   margin: 0 auto;
-  margin: 20px;
+  margin: 10px;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px 5px;
+  box-shadow: 0px 0px 5px 5px;
   font-size: 10px;
   height: 25px;
-  max-width: 80px;
+  width: 100px;
 }
 
 .Main__button:hover {
   background-color: black;
   color: white;
-  box-shadow: 5px 5px 10px 10px;
+  box-shadow: 0px 0px 10px 10px;
+}
+
+.Main__button--space {
+  display: flex;
+  justify-content: center;
+}
+
+.Main__emojis {
+  grid-area: profile;
+  justify-content: space-around;
+}
+
+.Main__emojis--button {
+  justify-content: space-around;
+  background-color: transparent;
+  border: 0;
 }
