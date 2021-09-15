@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .Main__styling {
   position: relative;
   width: 400px;
@@ -11,16 +17,16 @@
 }
 
 .Main__profile {
-  position: sticky;
   padding: 0px;
-  margin: 10px;
+  margin: 10px 20px 10px 50px;
   grid-area: profile;
-  height: 8rem;
+  height: 9rem;
   border-radius: 50%;
   border: 2px white solid;
 }
 
 .Main__name {
+  color: white;
   display: flex;
   flex-direction: column;
   grid-area: name;
@@ -51,4 +57,20 @@
 
 .green {
   background-color: #1a472a;
+}
+
+.Main__button {
+  margin: 0 auto;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px;
+  font-size: 10px;
+  height: 25px;
+  max-width: 80px;
+}
+
+.Main__button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px 10px 10px;
 }

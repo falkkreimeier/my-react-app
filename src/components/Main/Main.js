@@ -30,10 +30,13 @@ function Main({ characterName, house, imgURL, ancestry }) {
       <div className={`Main__styling ${color}`}>
         <img className="Main__profile" src={imgURL} alt={characterName} />
         <div class>
-          <h2 className="Main__name">{characterName}</h2>
+          <h3 className="Main__name">{characterName}</h3>
           <p>House: {house}</p>
           <p className="Main__house"> Ancestry: {ancestry}</p>
         </div>
+        <button className="Main__button" type="button">
+          Mehr erfahren
+        </button>
       </div>
     </div>
   );
