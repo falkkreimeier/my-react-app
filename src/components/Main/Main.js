@@ -1,10 +1,6 @@
 import { useState } from "react";
 import "./Main.css";
 
-// function Main() {
-// const characterName = "Hermione Granger";
-// const house = "Gryffindor";
-
 function tellColorName(house) {
   let color;
   if (house === "Gryffindor") {
@@ -85,8 +81,7 @@ function Main(props) {
             <p>Wand: {props.wand}</p>
           </div>
         )}
-        {/* {showDetails ? <div>Details</div> : <div></div>} */}
-        <div class="Main__button--space main__profile">
+        <div className="Main__button--space main__profile">
           <button
             onClick={showDetailsButton}
             className="Main__button"
@@ -99,21 +94,4 @@ function Main(props) {
     </div>
   );
 }
-
-// "name": "Hermione Granger",
-// "species": "human",
-// "gender": "female",
-// "house": "Gryffindor",
-// "dateOfBirth": "19-09-1979",
-// "yearOfBirth": 1979,
-// "ancestry": "muggleborn",
-// "eyeColour": "brown",
-// "hairColour": "brown",
-// "wand": { "wood": "vine", "core": "dragon heartstring", "length": "" },
-// "patronus": "otter",
-// "hogwartsStudent": true,
-// "hogwartsStaff": false,
-// "actor": "Emma Watson",
-// "alive": true,
-// "image": "http://hp-api.herokuapp.com/images/hermione.jpeg"
 export default Main;

@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "meine-schrift";
+  font-family: "HarryP";
   src: url("../Font/harry_p/HARRYP__.TTF") format("truetype");
 }
 
@@ -20,14 +20,14 @@
 }
 
 h1 {
-  font-family: meine-schrift, arial, sans-serif;
+  font-family: HarryP, arial, serif;
   font-size: 70px;
   padding: 0;
   margin: 10px;
 }
 
 .Header__subline {
-  font-family: LUMOS, arial, sans-serif;
+  font-family: LUMOS, arial, serif;
   font-size: 35px;
   padding: 0;
   margin: 0px;
