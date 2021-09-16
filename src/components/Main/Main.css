@@ -25,6 +25,10 @@
   height: 9rem;
   border-radius: 50%;
   border: 2px white solid;
+  color: gold;
+  box-shadow: 0px 0px 5px 5px;
+  max-width: 100px;
+  min-width: 100px;
 }
 
 .Main__name {
@@ -34,11 +38,13 @@
   grid-area: name;
   padding: 0;
   margin: 10px;
+  width: 200px;
 }
 
 .main__details {
   color: white;
   display: flex;
+  flex-direction: column;
   grid-area: details;
   padding: 0;
   margin: 10px;
