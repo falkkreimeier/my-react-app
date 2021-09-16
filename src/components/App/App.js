@@ -1,5 +1,5 @@
 import Header from "../Header/Header";
-import Main from "../Main/Main";
+import Main from "../Main/Card";
 import Footer from "../Footer/Footer";
 import "./App.css";
 import { useState } from "react";
