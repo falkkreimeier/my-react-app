@@ -32,46 +32,46 @@ function Main(props) {
 
   return (
     <div>
-      <div className={`Main__styling ${color}`}>
-        <section class="Main__emojis">
+      <div className={`Card__styling ${color}`}>
+        <section class="Card__emojis">
           <button
             onClick={() => handleEmojiButtonClick("⚡️")}
-            className="Main__emojis--button"
+            className="Card__emojis--button"
           >
             ⚡️
           </button>
           <button
             onClick={() => handleEmojiButtonClick("🙊")}
-            className="Main__emojis--button"
+            className="Card__emojis--button"
           >
             🙊
           </button>
           <button
             onClick={() => handleEmojiButtonClick("👹")}
-            className="Main__emojis--button"
+            className="Card__emojis--button"
           >
             👹
           </button>
           <button
             onClick={() => handleEmojiButtonClick("😱")}
-            className="Main__emojis--button"
+            className="Card__emojis--button"
           >
             😱
           </button>
         </section>
         <img
-          className="Main__profile"
+          className="Card__profile"
           src={props.imgURL}
           alt={props.characterName}
         />
         <div>
           {emoji}
-          <h3 className="Main__name">{props.characterName}</h3>
-          <p className="Main__name">House: {props.house}</p>
-          <p className="Main__name"> Birthday: {props.dateOfBirth}</p>
+          <h3 className="Card__name">{props.characterName}</h3>
+          <p className="Card__name">House: {props.house}</p>
+          <p className="Card__name"> Birthday: {props.dateOfBirth}</p>
         </div>
         {showDetails && (
-          <div className="main__details">
+          <div className="Card__details">
             <h2>Backround</h2>
             <p> Ancestry: {props.ancestry}</p>
             <p>Eye color: {props.eyeColour}</p>
@@ -81,10 +81,10 @@ function Main(props) {
             <p>Wand: {props.wand}</p>
           </div>
         )}
-        <div className="Main__button--space main__profile">
+        <div className="Card__button--space main__profile">
           <button
             onClick={showDetailsButton}
-            className="Main__button"
+            className="Card__button"
             type="button"
           >
             {showDetails ? "Less" : "More"}
