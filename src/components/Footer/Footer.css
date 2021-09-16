@@ -11,7 +11,7 @@
   background-color: white;
 }
 
-.Footer__button {
+.Footer__img {
   border: 1px black solid;
   background-image: url(../img/Ravenclaw.jpg);
   padding: 0px;
@@ -23,41 +23,39 @@
   height: 4rem;
 }
 
-.Footer__button:hover {
+.Footer__button {
+  border: 0;
+  background-color: transparent;
+}
+
+.Footer__img:hover {
   background-color: black;
   color: black;
   box-shadow: 0px 0px 10px 10px;
 }
 
-.footer__button--active {
-  border: 5px black solid;
-  color: black;
-  box-shadow: 0px 0px 5px 5px;
-  height: 5rem;
-}
-
-.footer__button--activered {
+.footer__img--activered {
   border: 5px #b8433a solid;
   color: #b8433a;
   box-shadow: 0px 0px 5px 5px;
   height: 5rem;
 }
 
-.footer__button--activeblue {
+.footer__img--activeblue {
   border: 5px #0e1a40 solid;
   color: #0e1a40;
   box-shadow: 0px 0px 5px 5px;
   height: 5rem;
 }
 
-.footer__button--activeyellow {
+.footer__img--activeyellow {
   border: 5px #f0c75e solid;
   color: #f0c75e;
   box-shadow: 0px 0px 5px 5px;
   height: 5rem;
 }
 
-.footer__button--activegreen {
+.footer__img--activegreen {
   border: 5px #1a472a solid;
   color: #1a472a;
   box-shadow: 0px 0px 5px 5px;

@@ -76,6 +76,7 @@ function Main(props) {
         </div>
         {showDetails && (
           <div className="main__details">
+            <h2>Backround</h2>
             <p> Ancestry: {props.ancestry}</p>
             <p>Eye color: {props.eyeColour}</p>
             <p>Hair color: {props.hairColour}</p>
@@ -91,7 +92,7 @@ function Main(props) {
             className="Main__button"
             type="button"
           >
-            Show details
+            {showDetails ? "Less" : "More"}
           </button>
         </div>
       </div>

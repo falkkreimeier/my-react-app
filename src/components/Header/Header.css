@@ -3,7 +3,14 @@
   src: url("../Font/harry_p/HARRYP__.TTF") format("truetype");
 }
 
+@font-face {
+  font-family: "LUMOS";
+  src: url("../Font/lumos/LUMOS.TTF") format("truetype");
+}
+
 .Header__styling {
+  display: flex;
+  flex-direction: column;
   width: 400px;
   border: 5px black solid;
   border-radius: 10px;
@@ -19,7 +26,15 @@ h1 {
   margin: 10px;
 }
 
+.Header__subline {
+  font-family: LUMOS, arial, sans-serif;
+  font-size: 35px;
+  padding: 0;
+  margin: 0px;
+  text-align: right;
+}
+
 .Header__styling {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
