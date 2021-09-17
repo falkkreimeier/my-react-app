@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Main.css";
+import "./Card.css";
 
 function tellColorName(house) {
   let color;
@@ -17,7 +17,7 @@ function tellColorName(house) {
   return color;
 }
 
-function Main(props) {
+function Card(props) {
   const [showDetails, setshowDetails] = useState(false);
   const [emoji, setemoji] = useState("");
 
@@ -31,49 +31,58 @@ function Main(props) {
   const color = tellColorName(props.house);
 
   return (
-    <div>
-      <div className={`Main__styling ${color}`}>
-        <section class="Main__emojis">
+    <div className={props.isFavorite ? "Card__button--favorite" : ""}>
+      <div className={`Card__styling ${color}`}>
+        <section className="Card__emojis">
           <button
             onClick={() => handleEmojiButtonClick("⚡️")}
-            className="Main__emojis--button"
+            className="Card__emojis--button"
           >
             ⚡️
           </button>
           <button
             onClick={() => handleEmojiButtonClick("🙊")}
-            className="Main__emojis--button"
+            className="Card__emojis--button"
           >
             🙊
           </button>
           <button
             onClick={() => handleEmojiButtonClick("👹")}
-            className="Main__emojis--button"
+            className="Card__emojis--button"
           >
             👹
           </button>
           <button
             onClick={() => handleEmojiButtonClick("😱")}
-            className="Main__emojis--button"
+            className="Card__emojis--button"
           >
             😱
           </button>
+          <button
+            onClick={() => props.onFavoriteButtonClick("⭐️")}
+            className="Card__button--favorit"
+          >
+            ⭐️
+          </button>
         </section>
         <img
-          className="Main__profile"
+          className="Card__profile"
           src={props.imgURL}
           alt={props.characterName}
         />
         <div>
-          {emoji}
-          <h3 className="Main__name">{props.characterName}</h3>
-          <p className="Main__name">House: {props.house}</p>
-          <p className="Main__name"> Birthday: {props.dateOfBirth}</p>
+          <h3 className="Card__name">
+            {emoji}
+            {props.favorites}
+            {props.characterName}
+          </h3>
+          <p className="Card__name">House: {props.house}</p>
+          <p className="Card__name"> Birthday: {props.dateOfBirth}</p>
         </div>
         {showDetails && (
-          <div className="main__details">
+          <div className="Card__details">
             <h2>Backround</h2>
-            <p> Ancestry: {props.ancestry}</p>
+            <p>Ancestry: {props.ancestry}</p>
             <p>Eye color: {props.eyeColour}</p>
             <p>Hair color: {props.hairColour}</p>
             <p>Patronus: {props.patronus}</p>
@@ -81,10 +90,10 @@ function Main(props) {
             <p>Wand: {props.wand}</p>
           </div>
         )}
-        <div className="Main__button--space main__profile">
+        <div className="Card__button--space Card__button--place">
           <button
             onClick={showDetailsButton}
-            className="Main__button"
+            className="Card__button"
             type="button"
           >
             {showDetails ? "Less" : "More"}
@@ -94,4 +103,4 @@ function Main(props) {
     </div>
   );
 }
-export default Main;
+export default Card;
